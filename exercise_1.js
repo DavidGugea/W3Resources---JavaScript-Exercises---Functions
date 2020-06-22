@@ -4,6 +4,5 @@ Example x = 32243;
 Expected Output : 34223
 */
 
-let reverseNumber = number => number.split("").reduce((accumulator, value) => (accumulator.splice(0, value), accumulator), new Array()).join("");
-
+let reverseNumber = number => eval(number.toString().split("").reverse().join(""));
 console.log(reverseNumber(12345));
